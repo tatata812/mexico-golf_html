@@ -52,7 +52,7 @@ $(function () {
     arrows: true,
     adaptiveHeight: true,
     responsive: [{
-      breakpoint: 600,
+      breakpoint: 1200,
       settings: {
         arrows: false,
       }

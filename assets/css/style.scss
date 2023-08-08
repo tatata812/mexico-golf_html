@@ -14,7 +14,7 @@
 }
 
 @mixin pc {
-  @media (max-width:(1120px)) {
+  @media (max-width:(1200px)) {
     @content;
   }
 }
@@ -30,6 +30,12 @@ header
   top: 0;
   width: 100%;
   transition: transform 0.3s;
+  height: 100px;
+
+  @include tab {
+    height: 60px;
+
+  }
 
   &.is-hide {
     transform: translateY(-100%);
@@ -95,12 +101,12 @@ header
   }
 
   &__inner {
-    padding: 16px 8px 16px 60px;
+    padding: 13px 8px 16px 60px;
     max-width: 1600px;
     margin: 0 auto;
 
     @media screen and (max-width: 1350px) {
-      padding: 16px 8px 16px;
+      padding: 13px 8px 16px;
     }
 
     @include pc {
@@ -117,18 +123,22 @@ header
   }
 
   &__ttl {
-    max-width: 320px;
+    max-width: 400px;
 
-    @media screen and (max-width: 1550px) {
-      width: 260px;
+    @media screen and (max-width: 1580px) {
+      width: 350px;
+    }
+
+    @media screen and (max-width: 1420px) {
+      width: 300px;
     }
 
     @media screen and (max-width: 1250px) {
-      width: 220px;
+      width: 280px;
     }
 
     @include tab {
-      max-width: 120px;
+      max-width: 200px;
 
     }
   }
@@ -176,35 +186,39 @@ header
 
   }
 
+  &__nav-br {
+    display: none;
+
+    @include pc {
+      display: block;
+    }
+  }
+
   &__nav_tel {
-    width: 220px;
+    width: 300px;
     display: block;
     padding: 0 12px;
 
+    @media screen and (max-width: 1550px) {
+      width: 220px;
+    }
+
 
     @media screen and (max-width: 1250px) {
-      width: 108px;
+      width: 180px;
     }
 
-    @include pc {
-      width: 88px;
-    }
+
 
   }
 
   &__nav-mail {
-    width: 50px;
+    width: 40px;
     display: block;
     padding: 12px 0 12px;
 
 
-    @media screen and (max-width: 1250px) {
-      width: 108px;
-    }
 
-    @include pc {
-      width: 88px;
-    }
 
   }
 
@@ -216,14 +230,14 @@ header
     padding: 12px 0 12px;
     line-height: 13px;
     text-shadow:
-    .4px .4px #000,
-    -.4px .4px #000,
-    -.4px -.4px #000,
-    .4px -.4px #000,
-    .4px 0px #000,
-    0px .4px #000,
-    -.4px 0px #000,
-    0px -.4px #000;
+      .4px .4px #000,
+      -.4px .4px #000,
+      -.4px -.4px #000,
+      .4px -.4px #000,
+      .4px 0px #000,
+      0px .4px #000,
+      -.4px 0px #000,
+      0px -.4px #000;
 
 
     &:hover {
@@ -234,6 +248,7 @@ header
 
     @include pc {
       letter-spacing: 0.4em;
+      line-height: 1.2;
     }
   }
 
@@ -533,47 +548,63 @@ main-visual
 
 .main-visual {
 
-  position: relative;
+  display: flex;
+  justify-content: center;
+
+  @include pc{
+  display: block;
+  }
+
 
   &__list {
+    max-width: 1120px;
 
-    background-color: #000;
   }
 
-  &__item {}
+  &__left-img {
 
-
-  &__item-img {}
-
-  &__tel-wrap {
-    position: absolute;
-    top: 40px;
-    left: 87%;
-    transform: translateX(-50%);
-  }
-
-  &__repeat-wrap {
-    position: absolute;
-    top: 75%;
-    left: 87%;
-    transform: translateX(-50%);
-
-    @include pc {
-      display: none;
+    @include pc{
+    display: none;
+    }
+    img {
+      object-fit: cover;
+      object-position: right bottom;
+      height: 100%;
     }
   }
+
+  &__right-img {
+    @include pc{
+      display: none;
+      }
+
+    img {
+      object-fit: cover;
+      object-position: left bottom;
+      height: 100%;
+    }
+  }
+
+  &__item {
+
+  }
+
+
+  &__item-img {
+    @include pc{
+      max-width: 1120px;
+      }
+  }
+
+
 
   &__ {}
 
 
 
   .slick-dots {
-    bottom: 42px;
+    bottom: -24px;
 
-    @include pc {
-      bottom: 8px;
-
-    }
   }
 
   .slick-slider {
@@ -581,12 +612,12 @@ main-visual
   }
 
   .slick-prev {
-    left: 30px;
+    left: -16px;
     z-index: 2;
   }
 
   .slick-next {
-    right: 30px;
+    right: -3px;
   }
 
 }
