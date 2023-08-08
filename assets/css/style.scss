@@ -598,8 +598,7 @@ main-visual
 
 
 
-  &__ {}
-
+ 
 
 
   .slick-dots {
@@ -623,6 +622,105 @@ main-visual
 }
 
 
+/* =================================
+top-about
+ ================================= */
+
+ .top-about {
+  padding: 0 0 60px;
+  @include tab{
+    padding: 0 0 40px;
+
+  }
+
+  &__ttl {
+    background-image: url(../img/top/top-abput-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0 12px;
+    margin: 16px 0 60px;
+
+    @include sp{
+    background-image: none;
+    margin: 16px 0 40px;
+
+    }
+  }
+
+  &__ttl-img {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  
+
+  &__content {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto 60px;
+    gap: 28px;
+
+    @include tab{
+      flex-direction: column;
+      align-items: center;
+      padding: 0 12px;
+      margin: 0 auto 40px;
+
+    }
+  }
+
+  &__item {
+    display: block;
+
+    @include tab{
+    max-width: 400px;
+    }
+  }
+
+  &__img {}
+  
+  &__subttl {
+    margin: 0 0 12px;
+  }
+
+  &__btn {
+    display: block;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+}
+
+
+
+.top-about-subttl {
+
+  &__ttl {
+    font-size: 22px;
+    border-bottom: 1px solid #8eb12b;
+    position: relative;
+
+    &:before {
+      content: url(../img/top/top-about-subttl-img.png);
+      transform: scale(0.6);
+      position: absolute;
+      top: -7px;
+      right: 0;
+    }
+
+
+  }
+
+  &__ttl-span {
+    color: #8eb12b;
+    font-size: 16px;
+    font-weight: 900;
+  }
+
+
+}
+
+
 
 
 
@@ -635,29 +733,62 @@ top-info
  ================================= */
 
 .top-info {
-  background-color: #ebf8f7;
-
-  &__ttl-wrap {
-    margin: 0 0 60px;
-
-    @include sp {
-      margin: 0 0 40px;
-    }
-  }
-
-  &__list {
-    .slick-dots {
-      bottom: -40px;
-    }
-  }
-
-  &__item {
-    margin: 0 12px;
+  background-color: #fefff0;
+  background-image: url(../img/top/top-info-bg.png);
+  
+  &__ttl-img {
+    max-width: 800px;
+    margin: 0 auto;
   }
 
   &__ {}
 
   &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+
+
+}
+
+
+/* =================================
+top-shop
+ ================================= */
+
+ .top-shop {
+  
+  &__ttl-img {
+    max-width: 800px;
+    margin: 0 auto 24px;
+  }
+
+  &__point-wrap {
+    background: linear-gradient(180deg, #ffdb31 0%, #ffdb31 50%, #fff 50%, #fff 100%);
+    padding: 48px 12px;
+
+    @include sp{
+      padding: 16px 12px;
+
+    }
+  }
+
+  &__point-img {
+    max-width: 800px;
+    margin: 0 auto;
+  }
 
   &__ {}
 

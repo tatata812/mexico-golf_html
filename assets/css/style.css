@@ -1397,24 +1397,112 @@ main-visual
 }
 
 /* =================================
+top-about
+ ================================= */
+.top-about {
+  padding: 0 0 60px;
+}
+@media (max-width: 820px) {
+  .top-about {
+    padding: 0 0 40px;
+  }
+}
+.top-about__ttl {
+  background-image: url(../img/top/top-abput-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0 12px;
+  margin: 16px 0 60px;
+}
+@media (max-width: 600px) {
+  .top-about__ttl {
+    background-image: none;
+    margin: 16px 0 40px;
+  }
+}
+.top-about__ttl-img {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.top-about__content {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto 60px;
+  gap: 28px;
+}
+@media (max-width: 820px) {
+  .top-about__content {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 12px;
+    margin: 0 auto 40px;
+  }
+}
+.top-about__item {
+  display: block;
+}
+@media (max-width: 820px) {
+  .top-about__item {
+    max-width: 400px;
+  }
+}
+.top-about__subttl {
+  margin: 0 0 12px;
+}
+.top-about__btn {
+  display: block;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.top-about-subttl__ttl {
+  font-size: 22px;
+  border-bottom: 1px solid #8eb12b;
+  position: relative;
+}
+.top-about-subttl__ttl:before {
+  content: url(../img/top/top-about-subttl-img.png);
+  transform: scale(0.6);
+  position: absolute;
+  top: -7px;
+  right: 0;
+}
+.top-about-subttl__ttl-span {
+  color: #8eb12b;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+/* =================================
 top-info
  ================================= */
 .top-info {
-  background-color: #ebf8f7;
+  background-color: #fefff0;
+  background-image: url(../img/top/top-info-bg.png);
 }
-.top-info__ttl-wrap {
-  margin: 0 0 60px;
+.top-info__ttl-img {
+  max-width: 800px;
+  margin: 0 auto;
+}
+/* =================================
+top-shop
+ ================================= */
+.top-shop__ttl-img {
+  max-width: 800px;
+  margin: 0 auto 24px;
+}
+.top-shop__point-wrap {
+  background: linear-gradient(180deg, #ffdb31 0%, #ffdb31 50%, #fff 50%, #fff 100%);
+  padding: 48px 12px;
 }
 @media (max-width: 600px) {
-  .top-info__ttl-wrap {
-    margin: 0 0 40px;
+  .top-shop__point-wrap {
+    padding: 16px 12px;
   }
 }
-.top-info__list .slick-dots {
-  bottom: -40px;
-}
-.top-info__item {
-  margin: 0 12px;
+.top-shop__point-img {
+  max-width: 800px;
+  margin: 0 auto;
 }
 /* =================================
 top-holiday
