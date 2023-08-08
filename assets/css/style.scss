@@ -219,9 +219,6 @@ header
     display: block;
     padding: 12px 0 12px;
 
-
-
-
   }
 
   &__nav-link {
@@ -361,94 +358,36 @@ footer
  ================================= */
 
 .footer {
-  background-color: #ebf8f7;
-  padding: 40px 8px 0;
-
-
-  &__top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1400px;
-    margin: 0 auto;
-    position: relative;
-
-
-    @include tab {
-      flex-wrap: wrap;
-      justify-content: space-around;
-      margin: 0 0 32px;
-    }
+  position: relative;
+  &__dec {
+    vertical-align: bottom;
   }
+
+  &__inner {
+    background-color: #007f21;
+    padding: 40px 8px 12px;
+  
+  }
+
+
+ 
 
   &__ttl {
-    max-width: 300px;
-
-    @include tab {
-      margin: 0 0 24px;
-    }
-  }
-
-  &__logo {
     display: block;
-    margin: 0 0 24px;
+    max-width: 340px;
+    margin: 0 auto 4px;
+    padding: 0 12px;
 
-    @include sp {
-      margin: 0 0 12px;
-    }
+
   }
 
   &__tel {
-    margin: 0 0 0 32px;
     display: block;
+    max-width: 300px;
+    margin: 0 auto 32px;
+    padding: 0 12px;
   }
 
-  &__tel-span {
-    font-size: 12px;
-  }
-
-  &__address {
-    font-size: 12px;
-    margin: 0 0 0 32px;
-    display: block;
-
-
-  }
-
-  &__menu {
-    display: flex;
-    gap: 12px;
-
-    @include pc {
-      flex-direction: column;
-    }
-  }
-
-  &__menu-item {
-    background-color: #fff;
-    text-align: center;
-    width: 150px;
-    padding: 2px;
-    border: #8a8a8a 1px solid;
-
-  }
-
-  &__sns {
-    display: flex;
-    gap: 12px;
-    border-top: #1b1464 solid 1px;
-    border-bottom: #1b1464 solid 1px;
-    padding: 6px 48px 0;
-
-    @include tab {
-      padding: 6px 24px 0;
-    }
-
-  }
-
-  &__sns-item {
-    width: 18px;
-  }
 
   &__nev {
     display: flex;
@@ -462,12 +401,17 @@ footer
     @include tab {
       flex-wrap: wrap;
     }
+
+    @include sp{
+      justify-content: space-between;
+    }
   }
 
   &__nav-item {
-    border-left: 1px solid #333;
+    border-left: 1px solid #fff;
     padding: 0 16px;
     line-height: 18px;
+    color: #fff;
 
     @include pc {
       padding: 0 8px;
@@ -478,7 +422,7 @@ footer
     }
 
     &:last-child {
-      border-right: 1px solid #333;
+      border-right: 1px solid #fff;
 
       @include sp {
         border: none;
@@ -487,58 +431,32 @@ footer
 
     @include sp {
       border: none;
+       width: 45%;
     }
   }
 
   &__bottom {
-    border-top: 1px solid #777777;
-    padding: 12px 0;
-
-    @include tab {
-      padding: 12px 0 90px;
-    }
-
-    @include sp {
-      padding: 12px 0 60px;
-    }
-
+    padding: 8px 0;
   }
 
   &__coppy {
+    color: #007f21;
     text-align: center;
     font-size: 12px;
   }
 
 
-  &__sp-menu {
-    display: none;
 
-    @include tab {
-      display: flex;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-    }
-
-    a:hover {
-      opacity: 1;
-    }
-
-  }
 
 
   // スクロールボタン
   &__scroll-btn {
     cursor: pointer;
     position: absolute;
-    top: -62px;
-    right: 16px;
-    width: 40px;
+    top: -32px;
+    right: 5%;
+    width: 50px;
 
-    @include tab {
-      display: none;
-    }
   }
 }
 
@@ -773,8 +691,13 @@ top-shop
  ================================= */
 
 .top-shop {
+
+  @include sp{
+    padding: 40px 0 0 0;
+  }
   border-bottom: #ffdb31 48px solid;
-  @include tab{
+
+  @include tab {
     border-bottom: #ffdb31 28px solid;
   }
 
@@ -796,7 +719,7 @@ top-shop
   }
 
   &__point-img {
-    max-width: 800px;
+    max-width: 620px;
     margin: 0 auto;
   }
 
@@ -868,7 +791,8 @@ top-partner
 .top-partner {
   padding: 40px 0 0;
   border-bottom: #ffdb31 48px solid;
-  @include tab{
+
+  @include tab {
     border-bottom: #ffdb31 28px solid;
 
   }
@@ -888,11 +812,11 @@ top-partner
     padding: 12px 0 0 0;
     position: relative;
 
-    @include pc{
+    @include pc {
       margin: 0 0 12px;
-      }
-    
-    
+    }
+
+
     &:before {
       content: "";
       display: inline-block;
@@ -906,8 +830,8 @@ top-partner
       transform: translateX(-50%);
       z-index: -1;
 
-      @include pc{
-      display: none;
+      @include pc {
+        display: none;
       }
     }
   }
@@ -919,9 +843,9 @@ top-partner
     padding: 200px 0 60px 0;
     margin: -120px 0 0 0;
 
-    @include pc{
+    @include pc {
       margin: 0 0 0 0;
-      padding: 40px 12px ;
+      padding: 40px 12px;
 
     }
   }
@@ -935,7 +859,8 @@ top-partner
     display: block;
     max-width: 880px;
     margin: 60px auto;
-    @include tab{
+
+    @include tab {
       margin: 0px auto;
 
     }
@@ -979,19 +904,23 @@ top-price
 .top-price {
 
   padding: 24px 0 0 0;
-  border: #777777 1px solid;
+  border-bottom: #b3b3b3 2px solid;
+
+  @include sp{
+    padding: 40px 0 0 0;
+  }
 
   &__ttl-img {
     padding: 0 4px;
     max-width: 800px;
-    margin: 0 auto ;
+    margin: 0 auto;
   }
 
   &__subttl {
     max-width: 560px;
     margin: 60px auto 40px;
 
-    @include sp{
+    @include sp {
       margin: 24px auto;
 
     }
@@ -1003,7 +932,7 @@ top-price
     background-color: #fefff0;
     padding: 60px 12px;
 
-    @include sp{
+    @include sp {
       padding: 40px 12px;
     }
   }
@@ -1012,7 +941,7 @@ top-price
     max-width: 720px;
     margin: 0 auto 60px;
 
-    @include sp{
+    @include sp {
       margin: 0 auto 40px;
     }
   }
@@ -1027,7 +956,7 @@ top-price
     max-width: 880px;
     margin: 0 auto 60px;
 
-    @include sp{
+    @include sp {
       margin: 0 auto 40px;
     }
   }
@@ -1039,7 +968,7 @@ top-price
     margin: 0 auto;
     font-size: 20px;
 
-    @include sp{
+    @include sp {
       font-size: 16px;
 
     }
@@ -1054,7 +983,7 @@ top-price
     font-weight: 900;
     letter-spacing: 0.2rem;
 
-    @include sp{
+    @include sp {
       letter-spacing: 0.1rem;
 
     }
@@ -1082,24 +1011,24 @@ top-price
     font-size: 13px;
     padding: 3px 0 1px;
 
-    @include tab{
-    display: block;
-    margin: 0 auto;
+    @include tab {
+      display: block;
+      margin: 0 auto;
     }
 
-@include sp{
-  width: 55px;
+    @include sp {
+      width: 55px;
 
-}
+    }
 
 
-     &--weekday {
+    &--weekday {
       background-color: #0071bc;
-     }
+    }
 
-     &--holiday {
+    &--holiday {
       background-color: #f00b22;
-     }
+    }
   }
 
 
@@ -1112,6 +1041,7 @@ top-price
     max-width: 320px;
     margin: 40px auto;
   }
+
 
   &__ {}
 
@@ -1131,44 +1061,98 @@ top-price
 }
 
 /* =================================
-
+top-access
  ================================= */
 
-.aaa {
+.top-access {
+  padding: 32px 0 0 0;
 
-  &__ {}
+  &__ttl-img {
+    padding: 0 4px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
 
-  &__ {}
+  &__subttl {
+    max-width: 560px;
+    margin: 60px auto 40px;
 
-  &__ {}
+    @include sp {
+      margin: 24px auto;
 
-  &__ {}
+    }
+  }
 
-  &__ {}
+  &__map {
+    width: 100%;
+    height: 0;
+    position: relative;
+    padding-top: 22.25%;
+    overflow: hidden;
+    margin: 0 0 40px;
 
-  &__ {}
+    @include sp{
+      padding-top: 52.25%;
 
-  &__ {}
+    }
 
-  &__ {}
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
 
-  &__ {}
+  &__btn {
+    display: block;
+    max-width: 320px;
+    margin: 0 auto 60px;
+  }
 
-  &__ {}
+  &__content {
+    max-width: 660px;
+    margin: 0 auto;
+    padding: 0 12px;
+  }
 
-  &__ {}
+  &__content-ttl {
+    background-color: #8eb12b;
+    color: #fff;
+    padding: 6px 12px;
+    max-width: 300px;
+    margin: 0 0 12px;
 
-  &__ {}
+  }
+    &__content-text {
+      margin: 0 0 32px;
+    }
 
-  &__ {}
+    &__ {}
 
-  &__ {}
+    &__ {}
 
-  &__ {}
+    &__ {}
 
-  &__ {}
+    &__ {}
 
-  &__ {}
+    &__ {}
 
+    &__ {}
+
+    &__ {}
+
+    &__ {}
+
+    &__ {}
+
+    &__ {}
+
+    &__ {}
+
+    &__ {}
+
+    &__ {}
 
 }
