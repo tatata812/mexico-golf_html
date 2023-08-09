@@ -88,28 +88,13 @@ $(function () {
     ],
   });
 
-  // 客室詳細
-  $slide = $('.room-main-js');
-  $navigation = $('.room-main__bottom-img');
-
-  $slide.slick({ //slickスライダー作成
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    fade: true,
-    dots: true,
-  });
-  $navigation.each(function (index) { //サムネイルに連番付与属性
-    $(this).attr('data-number', index);
-  });
-  $navigation.eq(0).addClass('current'); //1枚をオーバーレイ
-
-  $navigation.on('click', function () { //サムネイルクリック時イベント
-    var number = $(this).attr('data-number');
-    $slide.slick('slickGoTo', number, true);
-    $(this).siblings().removeClass('current');
-    $(this).addClass('current');
+  // トップページ info タブ
+  $(".top-info__tab-item").on("click", function () { //１．タブをクリックしたときに
+    var i = $(this).index(); //２．クリックしたタブが何個目かをiに代入
+    $(".top-info__tab-item").removeClass("active"); //３．全てのボックスからactiveクラスを外す
+    $(".top-info__box-item").removeClass("active"); //３．全てのボックスからactiveクラスを外す
+    $(".top-info__tab-item").eq(i).addClass("active"); //４．ボックスのi番目にactiveクラスを付ける
+    $(".top-info__box-item").eq(i).addClass("active"); //４．ボックスのi番目にactiveクラスを付ける
   });
 
 

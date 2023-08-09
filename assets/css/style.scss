@@ -359,6 +359,7 @@ footer
 
 .footer {
   position: relative;
+
   &__dec {
     vertical-align: bottom;
   }
@@ -366,11 +367,11 @@ footer
   &__inner {
     background-color: #007f21;
     padding: 40px 8px 12px;
-  
+
   }
 
 
- 
+
 
   &__ttl {
     display: block;
@@ -402,7 +403,7 @@ footer
       flex-wrap: wrap;
     }
 
-    @include sp{
+    @include sp {
       justify-content: space-between;
     }
   }
@@ -431,7 +432,7 @@ footer
 
     @include sp {
       border: none;
-       width: 45%;
+      width: 45%;
     }
   }
 
@@ -473,11 +474,11 @@ main-visual
   background-repeat: no-repeat;
   background-size: cover;
 
-  @include pc{
-  background-image: none;
+  @include pc {
+    background-image: none;
   }
 
- 
+
 
 
   &__list {
@@ -656,30 +657,142 @@ top-info
 .top-info {
   background-color: #fefff0;
   background-image: url(../img/top/top-info-bg.png);
+  padding: 12px 12px 60px;
 
   &__ttl-img {
     padding: 0 4px;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto 60px;
   }
 
-  &__ {}
+  &__tabwrap {
+    max-width: 920px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: #8eb12b 2px solid;
+    border-radius: 8px;
+    padding: 24px;
+  }
 
-  &__ {}
+  &__tab {
+    display: flex;
+    justify-content: center;
+    gap: 1px;
+    margin: 0 0 24px;
+  }
 
-  &__ {}
+  &__tab-item {
+    width: 120px;
+    border: solid 1px #7e7e7e;
+    cursor: pointer;
+    text-align: center;
+    padding: 8px;
+    border-radius: 2px;
 
-  &__ {}
+    &:hover {
+      border: solid 1px #ec1818;
+    }
 
-  &__ {}
+    &.active {
+      border: solid 1px #ec1818;
+    }
+  }
 
-  &__ {}
+  &__box {
+    min-height: 200px;
+    margin: 0 0 24px;
+  }
 
-  &__ {}
+  &__box-item {
+    display: none;
 
-  &__ {}
+    &.active {
+      display: block;
+    }
+  }
 
-  &__ {}
+  &__article {
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+    padding: 12px 2px;
+    border-bottom: #b3b3b3 solid 1px;
+    position: relative;
+
+    &:first-of-type{
+      border-top: #b3b3b3 solid 1px;
+    }
+
+    @include tab{
+    display: block;
+    padding: 6px 2px;
+
+    }
+
+    &:before {
+      content: url(../img/top/top-info-ttl-img.png);
+      transform: scale(0.8);
+      position: absolute;
+      top:10px;
+      right: 5px;
+
+      @include tab{
+      top: 50%;
+      transform: translateY(-50%);
+      }
+    }
+  
+}
+
+&__date {
+  margin: 0 16px 0 0;
+  font-size: 14px;
+
+}
+
+&__cat {
+  width: 80px;
+  text-align: center;
+  background-color: #8eb12b;
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.2;
+  margin: 0 24px 0 0;
+  display: inline-block;
+  padding: 1px;
+
+&--blog {
+  background-color: #f7931e;
+
+}
+
+}
+
+&__article-ttl {}
+
+&__btn-wrap {
+  display: flex;
+  gap: 60px;
+  max-width: 480px;
+  margin-left: auto;
+
+  @include sp{
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  }
+}
+
+&__btn {
+
+  @include sp{
+  width: 220px;
+  }
+}
+
+&__ {}
+
+&__ {}
 
 
 
@@ -692,9 +805,10 @@ top-shop
 
 .top-shop {
 
-  @include sp{
+  @include sp {
     padding: 40px 0 0 0;
   }
+
   border-bottom: #ffdb31 48px solid;
 
   @include tab {
@@ -906,7 +1020,7 @@ top-price
   padding: 24px 0 0 0;
   border-bottom: #b3b3b3 2px solid;
 
-  @include sp{
+  @include sp {
     padding: 40px 0 0 0;
   }
 
@@ -1091,7 +1205,7 @@ top-access
     overflow: hidden;
     margin: 0 0 40px;
 
-    @include sp{
+    @include sp {
       padding-top: 52.25%;
 
     }
@@ -1125,34 +1239,35 @@ top-access
     margin: 0 0 12px;
 
   }
-    &__content-text {
-      margin: 0 0 32px;
-    }
 
-    &__ {}
+  &__content-text {
+    margin: 0 0 32px;
+  }
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
+
+  &__ {}
 
 }

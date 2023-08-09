@@ -1203,11 +1203,116 @@ top-info
 .top-info {
   background-color: #fefff0;
   background-image: url(../img/top/top-info-bg.png);
+  padding: 12px 12px 60px;
 }
 .top-info__ttl-img {
   padding: 0 4px;
   max-width: 800px;
+  margin: 0 auto 60px;
+}
+.top-info__tabwrap {
+  max-width: 920px;
   margin: 0 auto;
+  background-color: #fff;
+  border: #8eb12b 2px solid;
+  border-radius: 8px;
+  padding: 24px;
+}
+.top-info__tab {
+  display: flex;
+  justify-content: center;
+  gap: 1px;
+  margin: 0 0 24px;
+}
+.top-info__tab-item {
+  width: 120px;
+  border: solid 1px #7e7e7e;
+  cursor: pointer;
+  text-align: center;
+  padding: 8px;
+  border-radius: 2px;
+}
+.top-info__tab-item:hover {
+  border: solid 1px #ec1818;
+}
+.top-info__tab-item.active {
+  border: solid 1px #ec1818;
+}
+.top-info__box {
+  min-height: 200px;
+  margin: 0 0 24px;
+}
+.top-info__box-item {
+  display: none;
+}
+.top-info__box-item.active {
+  display: block;
+}
+.top-info__article {
+  display: flex;
+  font-size: 15px;
+  align-items: center;
+  padding: 12px 2px;
+  border-bottom: #b3b3b3 solid 1px;
+  position: relative;
+}
+.top-info__article:first-of-type {
+  border-top: #b3b3b3 solid 1px;
+}
+@media (max-width: 820px) {
+  .top-info__article {
+    display: block;
+    padding: 6px 2px;
+  }
+}
+.top-info__article:before {
+  content: url(../img/top/top-info-ttl-img.png);
+  transform: scale(0.8);
+  position: absolute;
+  top: 10px;
+  right: 5px;
+}
+@media (max-width: 820px) {
+  .top-info__article:before {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.top-info__date {
+  margin: 0 16px 0 0;
+  font-size: 14px;
+}
+.top-info__cat {
+  width: 80px;
+  text-align: center;
+  background-color: #8eb12b;
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.2;
+  margin: 0 24px 0 0;
+  display: inline-block;
+  padding: 1px;
+}
+.top-info__cat--blog {
+  background-color: #f7931e;
+}
+.top-info__btn-wrap {
+  display: flex;
+  gap: 60px;
+  max-width: 480px;
+  margin-left: auto;
+}
+@media (max-width: 600px) {
+  .top-info__btn-wrap {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+}
+@media (max-width: 600px) {
+  .top-info__btn {
+    width: 220px;
+  }
 }
 /* =================================
 top-shop
