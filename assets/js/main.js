@@ -43,10 +43,9 @@ $(function () {
 
 
   $(".main-visual-js").slick({
+    lazyLoad: 'ondemand',
     autoplay: true,
     autoplaySpeed: 4000,
-    fade: true,
-    cssEase: 'linear', // アニメーション
     speed: 1000, // フェードアニメーションの速度設定
     dots: true,
     arrows: true,
@@ -114,29 +113,6 @@ $(function () {
   });
 
 
-  function checkBreakPoint() {
-    w = $(window).width();
-    if (w <= 600) {
-      // スマホ向け（767px以下のとき）
-      $('.top-plan-js').not('.slick-initialized').slick({
-        //スライドさせる
-        autoplay: false,
-        dots: true,
-        arrows: false,
-        slidesToShow: 1,
-      });
-    } else {
-      // PC向け
-      $('.top-plan-js.slick-initialized').slick('unslick');
-    }
-  }
-  // ウインドウがリサイズする度にチェック
-  $(window).resize(function () {
-    checkBreakPoint();
-  });
-  // 初回チェック
-  checkBreakPoint();
-
   //フェードイン
   $(window).scroll(function () {
     const windowHeight = $(window).height(); //ウィンドウの高さ
@@ -144,7 +120,7 @@ $(function () {
 
     $(".fade-in-js").each(function () {
       const targetPosition = $(this).offset().top; //要素の上からの距離
-      if (scroll > targetPosition - windowHeight + 50) {
+      if (scroll > targetPosition - windowHeight + 200) {
         $(this).addClass("action");
       }
     });
