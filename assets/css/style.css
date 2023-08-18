@@ -218,22 +218,18 @@ li {
 }
 .field-section__wrap {
   display: flex;
-  gap: 12px;
-  margin: 0 auto 40px;
+  gap: 6px;
+  margin: 0 auto;
 }
 @media (max-width: 820px) {
   .field-section__wrap {
     flex-direction: column;
-    margin: 0 auto 24px;
+    margin: 0 auto;
+    gap: 12px;
   }
 }
 .field-section__left {
   width: 660px;
-}
-@media (max-width: 1120px) {
-  .field-section__left {
-    width: 60%;
-  }
 }
 @media (max-width: 820px) {
   .field-section__left {
@@ -242,6 +238,14 @@ li {
 }
 .field-section__left-img {
   overflow: hidden;
+}
+.field-section__left-img img {
+  border-right: #29abe2 4px solid;
+}
+@media (max-width: 820px) {
+  .field-section__left-img img {
+    border-right: none;
+  }
 }
 @media (max-width: 820px) {
   .field-section__right {
@@ -303,6 +307,71 @@ li {
 /* =================================
 ゴルフ練習場
  ================================= */
+.page-training__section01 {
+  margin: 0 auto 80px;
+}
+@media (max-width: 820px) {
+  .page-training__section01 {
+    margin: 0 auto 40px;
+  }
+}
+.page-training__section02 {
+  margin: 0 auto 80px;
+}
+@media (max-width: 820px) {
+  .page-training__section02 {
+    margin: 0 auto 40px;
+  }
+}
+.page-training__section-inner {
+  max-width: 900px;
+}
+.page-training__table {
+  border: 1px solid #e6e6e6;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0 0 40px;
+}
+@media (max-width: 600px) {
+  .page-training__table {
+    font-size: 13px;
+    margin: 0 0 24px;
+  }
+}
+.page-training__th {
+  border: 1px solid #e6e6e6;
+  border-collapse: collapse;
+  background-color: #c5e29f;
+  color: #006837;
+  padding: 8px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+@media (max-width: 820px) {
+  .page-training__th {
+    padding: 4px;
+  }
+}
+.page-training__th--01 {
+  width: 20%;
+}
+.page-training__th--02 {
+  width: 40%;
+}
+.page-training__th--03 {
+  width: 40%;
+}
+.page-training__td {
+  border: 1px solid #e6e6e6;
+  border-collapse: collapse;
+  padding: 8px;
+  vertical-align: middle;
+}
+@media (max-width: 820px) {
+  .page-training__td {
+    padding: 4px;
+  }
+}
 /* =================================
 
  ================================= */

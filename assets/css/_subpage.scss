@@ -130,21 +130,21 @@
 
   &__wrap {
     display: flex;
-    gap: 12px;
-    margin: 0 auto 40px;
+    gap: 6px;
+    margin: 0 auto;
 
     @include tab {
       flex-direction: column;
-      margin: 0 auto 24px;
+      margin: 0 auto;
+      gap: 12px;
+
     }
   }
 
   &__left {
     width: 660px;
 
-    @include pc {
-      width: 60%;
-    }
+
 
     @include tab {
       width: 100%;
@@ -154,6 +154,15 @@
 
   &__left-img {
     overflow: hidden;
+
+    img {
+      border-right: #29abe2 4px solid;
+
+      @include tab{
+        border-right: none;
+
+      }
+    }
 
 
   }
@@ -238,15 +247,81 @@ flex-wrap: wrap;
 ゴルフ練習場
  ================================= */
 
- .aaa {
+ .page-training {
 
-  &__ {}
+  &__section01 {
+    margin: 0 auto 80px;
 
-  &__ {}
+    @include tab{
+      margin: 0 auto 40px;
 
-  &__ {}
+    }
+  }
 
-  &__ {}
+  &__section02 {
+    margin: 0 auto 80px;
+
+    @include tab{
+      margin: 0 auto 40px;
+
+    }
+  }
+
+  &__section-inner{
+    max-width: 900px;
+  }
+
+  &__table {
+    border: 1px solid #e6e6e6;
+	border-collapse: collapse;
+  width: 100%;
+  margin: 0 0 40px;
+
+  @include sp{
+  font-size: 13px;
+  margin: 0 0 24px;
+
+  }
+  }
+
+  &__tr {}
+
+  &__th {
+    border: 1px solid #e6e6e6;
+	border-collapse: collapse;
+  background-color: #c5e29f;
+  color: #006837;
+  padding: 8px;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  @include tab{
+    padding: 4px;
+  }
+
+  &--01 {
+    width: 20%;
+  }
+
+  &--02 {
+    width: 40%;
+  }
+
+  &--03 {
+    width: 40%;
+  }
+  }
+
+  &__td {
+    border: 1px solid #e6e6e6;
+	border-collapse: collapse;
+  padding: 8px;
+  vertical-align: middle;
+  @include tab{
+    padding: 4px;
+  }
+
+  }
 
   &__ {}
 
