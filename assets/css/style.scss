@@ -353,6 +353,110 @@ header
 }
 
 
+
+.header-bottom {
+
+  &__top {
+    background-color: #feffd6;
+    padding: 4px;
+  }
+
+  &__top-inner {
+    text-align: center;
+  }
+
+  &__new {
+    display: inline-block;
+    font-size: 12px;
+    border: #000 1px solid;
+    padding: 0 2px;
+    line-height: 1.5;
+
+  }
+
+  &__ttl {
+    display: inline-block;
+    font-size: 12px;
+
+    @include tab {
+      margin: 0 16px 0 0;
+    }
+  }
+
+  &__dot {
+    display: inline-block;
+    font-size: 12px;
+    white-space: nowrap;
+
+    @include tab {
+      display: none;
+    }
+  }
+
+  &__btn01 {
+    display: inline-block;
+    margin: 0 4px 0 0;
+    font-size: 12px;
+    background-color: #8cc63f;
+    color: #fff;
+    padding: 0 4px;
+    font-size: 11px;
+    line-height: 1.5;
+
+  }
+
+  &__btn02 {
+    display: inline-block;
+    margin: 0 12px 0 0;
+    font-size: 12px;
+    background-color: #fbb03b;
+    color: #fff;
+    padding: 0 4px;
+    font-size: 11px;
+    line-height: 1.5;
+
+
+  }
+
+  &__btn-wrap {
+    display: inline-block;
+
+  }
+
+  &__bottom {
+    background-color: #f8f8f8;
+  }
+
+  &__bottom-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 4px 12px;
+    font-size: 14px;
+    color: #6a6a6a;
+  }
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+
+}
+
+
+
+
 /* =================================
 footer
  ================================= */
@@ -387,7 +491,30 @@ footer
     max-width: 300px;
     margin: 0 auto 32px;
     padding: 0 12px;
+
+
+    @include pc {
+      margin: 0 auto 16px;
+    }
   }
+
+  &__blog {
+    position: absolute;
+    top: 168px;
+    left: 75%;
+    transform: translateX(-50%);
+
+    @include pc {
+      position: static;
+      transform: translateX(0);
+      display: block;
+      max-width: 280px;
+      margin: 0 auto 32px;
+      padding: 0 12px;
+
+    }
+  }
+
 
 
   &__nev {
@@ -657,7 +784,7 @@ top-info
 .top-info {
   background-color: #fefff0;
   background-image: url(../img/top/top-info-bg.png);
-  padding: 12px 12px 60px;
+  padding: 12px 8px 60px;
 
   &__ttl-img {
     padding: 0 4px;
@@ -668,39 +795,80 @@ top-info
   &__tabwrap {
     max-width: 920px;
     margin: 0 auto;
-    background-color: #fff;
-    border: #8eb12b 2px solid;
-    border-radius: 8px;
-    padding: 24px;
+
   }
 
   &__tab {
     display: flex;
     justify-content: center;
-    gap: 1px;
-    margin: 0 0 24px;
+    gap: 80px;
+    margin: 0 0 8px;
+
+    @include sp {
+      gap: 40px;
+      margin: 0 0 2px;
+
+    }
   }
 
   &__tab-item {
-    width: 120px;
-    border: solid 1px #7e7e7e;
+    width: 60px;
     cursor: pointer;
-    text-align: center;
-    padding: 8px;
-    border-radius: 2px;
+    position: relative;
+    z-index: 1;
+
+    @include sp {
+      width: 52px;
+
+    }
+
 
     &:hover {
-      border: solid 1px #ec1818;
+      &:before {
+        content: url(../img/top/info-ttl-bg.png);
+        position: absolute;
+        top: 22px;
+        left: -107px;
+        z-index: -2;
+        transform: scale(0.7);
+
+        @include sp {
+          transform: scale(0.5);
+          top: 13px;
+
+        }
+
+
+      }
     }
 
     &.active {
-      border: solid 1px #ec1818;
+      &:before {
+        content: url(../img/top/info-ttl-bg.png);
+        position: absolute;
+        top: 22px;
+        left: -107px;
+        z-index: -2;
+        transform: scale(0.7);
+
+        @include sp {
+          transform: scale(0.5);
+          top: 13px;
+
+        }
+      }
     }
   }
 
   &__box {
     min-height: 200px;
     margin: 0 0 24px;
+    background-color: #fff;
+    border: #8cc63f 3px solid;
+    border-radius: 8px;
+    padding: 64px 24px 40px 24px;
+
+
   }
 
   &__box-item {
@@ -719,13 +887,13 @@ top-info
     border-bottom: #b3b3b3 solid 1px;
     position: relative;
 
-    &:first-of-type{
+    &:first-of-type {
       border-top: #b3b3b3 solid 1px;
     }
 
-    @include tab{
-    display: block;
-    padding: 6px 2px;
+    @include tab {
+      display: block;
+      padding: 6px 2px;
 
     }
 
@@ -733,66 +901,56 @@ top-info
       content: url(../img/top/top-info-ttl-img.png);
       transform: scale(0.8);
       position: absolute;
-      top:10px;
+      top: 10px;
       right: 5px;
 
-      @include tab{
-      top: 50%;
-      transform: translateY(-50%);
+      @include tab {
+        top: 50%;
+        transform: translateY(-50%);
+
       }
     }
-  
-}
 
-&__date {
-  margin: 0 16px 0 0;
-  font-size: 14px;
-
-}
-
-&__cat {
-  width: 80px;
-  text-align: center;
-  background-color: #8eb12b;
-  font-size: 14px;
-  color: #fff;
-  line-height: 1.2;
-  margin: 0 24px 0 0;
-  display: inline-block;
-  padding: 1px;
-
-&--blog {
-  background-color: #f7931e;
-
-}
-
-}
-
-&__article-ttl {}
-
-&__btn-wrap {
-  display: flex;
-  gap: 60px;
-  max-width: 480px;
-  margin-left: auto;
-
-  @include sp{
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
   }
-}
 
-&__btn {
+  &__date {
+    margin: 0 16px 0 0;
+    font-size: 14px;
 
-  @include sp{
-  width: 220px;
   }
-}
 
-&__ {}
+  &__cat {
+    width: 80px;
+    text-align: center;
+    background-color: #8eb12b;
+    font-size: 14px;
+    color: #fff;
+    line-height: 1.2;
+    margin: 0 24px 0 0;
+    display: inline-block;
+    padding: 1px;
 
-&__ {}
+    &--blog {
+      background-color: #f7931e;
+
+    }
+
+  }
+
+  &__article-ttl {}
+
+
+
+  &__btn {
+    display: block;
+    width: 220px;
+    margin: 40px auto 0;
+
+  }
+
+  &__ {}
+
+  &__ {}
 
 
 
