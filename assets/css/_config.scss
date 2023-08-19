@@ -138,8 +138,21 @@ li {
 // エディター設定
 
 .page-style {
+  &__section {
+    margin: 40px auto 80px;
+
+    @include tab {
+      margin: 20px auto 40px;
+
+    }
+  }
+
   &__block {
-    margin: 0 0 60px;
+    margin: 0 0 40px;
+
+    @include tab{
+      margin: 0 0 40px;
+    }
   }
 
   .aligncenter {
@@ -154,26 +167,26 @@ li {
 
   p {
     margin: 0 0 12px;
-    font-size: 18px;
-    line-height: 24px;
   }
 
   h1 {
-    font-size: 28px;
+    font-size: 24px;
     margin: 24px 0 32px;
-    background: linear-gradient(transparent 70%, #a7d6ff 70%);
-
   }
 
   h2 {
-    font-size: 24px;
-    margin: 24px 0 20px;
-    color: #002e73;
     font-weight: bold;
+    font-size: 20px;
+    margin: 24px 0 20px;
+    color: #387510;
+    font-weight: bold;
+    border-bottom: #387510 1px solid;
+    display: inline-block;
+    padding: 0 6px;
   }
 
   h3 {
-    font-size: 20px;
+    font-size: 17px;
     margin: 24px 0 16px;
 
   }
@@ -184,25 +197,23 @@ li {
 
   ol {
     margin: 0 0 12px 24px;
-    line-height: 24px;
+  
 
     li {
-      font-size: 18px;
+     
       list-style: decimal;
     }
   }
 
   ul {
     margin: 0 0 12px 24px;
-    line-height: 24px;
+   
 
     li {
-      font-size: 18px;
+      
       list-style: disc;
     }
   }
 
-  li {
-    font-size: 18px;
-  }
+
 }

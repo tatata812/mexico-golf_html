@@ -348,8 +348,23 @@ header
   }
 
   &__nav-item {
-    margin: 0 0 24px;
+    margin: 0 0 20px;
+    &--sub {
+      margin: 0 0 4px;
+      white-space: nowrap;
+
+      &:before{
+        content: '……';
+        margin: 0 4px 0 0;
+      }
+    }
   }
+
+  &__nav-sublist {
+    margin: 0 0 0 20px;
+  }
+
+
 }
 
 
