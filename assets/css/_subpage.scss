@@ -623,177 +623,7 @@
 }
 
 
-/* =================================
-お知らせ一覧
- ================================= */
 
-.page-information {
-
-  &__section {
-    margin: 40px auto 80px;
-
-    @include tab {
-      margin: 20px auto 40px;
-
-    }
-  }
-
-
-  &__tab {
-    display: flex;
-    justify-content: center;
-    gap: 120px;
-    margin: 0 0 80px;
-    border-bottom: #8cc63f 3px solid;
-    padding: 0 0 5px;
-
-
-
-    @include sp {
-      gap: 40px;
-      margin: 0 0 40px;
-
-    }
-  }
-
-  &__tab-item {
-    width: 60px;
-    cursor: pointer;
-    position: relative;
-    z-index: 1;
-
-    @include sp {
-      width: 52px;
-
-    }
-
-
-    &:hover {
-      &:before {
-        content: url(../img/top/info-ttl-bg.png);
-        position: absolute;
-        top: 20px;
-        left: -107px;
-        z-index: -2;
-        transform: scale(0.7);
-
-        @include sp {
-          transform: scale(0.5);
-          top: 16px;
-
-        }
-
-
-      }
-    }
-
-    &.active {
-      &:before {
-        content: url(../img/top/info-ttl-bg.png);
-        position: absolute;
-        top: 20px;
-        left: -107px;
-        z-index: -2;
-        transform: scale(0.7);
-
-        @include sp {
-          transform: scale(0.5);
-          top: 16px;
-
-        }
-      }
-    }
-  }
-
-  &__box {
-   margin: 0 0 40px;
-  }
-
-  &__article {
-    display: flex;
-    font-size: 15px;
-    align-items: center;
-    padding: 16px 2px;
-    border-bottom: #b3b3b3 solid 1px;
-    position: relative;
-
-    &:first-of-type {
-      border-top: #b3b3b3 solid 1px;
-    }
-
-    @include tab {
-      display: block;
-      padding: 6px 2px;
-
-    }
-
-    &:before {
-      content: url(../img/top/top-info-ttl-img.png);
-      transform: scale(0.8);
-      position: absolute;
-      top: 10px;
-      right: 5px;
-
-      @include tab {
-        top: 50%;
-        transform: translateY(-50%);
-
-      }
-    }
-
-  }
-
-  &__date {
-    margin: 0 16px 0 0;
-    font-size: 14px;
-
-  }
-
-  &__cat {
-    width: 80px;
-    text-align: center;
-    background-color: #8eb12b;
-    font-size: 14px;
-    color: #fff;
-    line-height: 1.2;
-    margin: 0 24px 0 0;
-    display: inline-block;
-    padding: 1px;
-
-    &--blog {
-      background-color: #f7931e;
-
-    }
-  }
-
-  &__pager {
-    text-align: center;
-  }
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-
-}
 
 
 /* =================================
@@ -1065,15 +895,65 @@
 
   &__ {}
 
-
 }
 
 /* =================================
-
+ショップ
  ================================= */
 
 .aaa {
 
+  &__section {
+    margin: 40px auto 80px;
+
+    @include tab {
+      margin: 20px auto 40px;
+
+    }
+  }
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+}
+
+
+/* =================================
+買い取りについて
+ ================================= */
+
+ .aaa {
+
+  &__section {
+    margin: 40px auto 80px;
+
+    @include tab {
+      margin: 20px auto 40px;
+
+    }
+  }
   &__ {}
 
   &__ {}
@@ -1102,11 +982,262 @@
 
   &__ {}
 
+}
+
+/* =================================
+お知らせ一覧
+ ================================= */
+
+ .page-information {
+
+  &__section {
+    margin: 40px auto 80px;
+
+    @include tab {
+      margin: 20px auto 40px;
+
+    }
+  }
+
+
+  &__tab {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    margin: 0 0 80px;
+    border-bottom: #8cc63f 3px solid;
+    padding: 0 0 5px;
+
+
+
+    @include sp {
+      gap: 40px;
+      margin: 0 0 40px;
+
+    }
+  }
+
+  &__tab-item {
+    width: 60px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+
+    @include sp {
+      width: 52px;
+
+    }
+
+
+    &:hover {
+      &:before {
+        content: url(../img/top/info-ttl-bg.png);
+        position: absolute;
+        top: 20px;
+        left: -107px;
+        z-index: -2;
+        transform: scale(0.7);
+
+        @include sp {
+          transform: scale(0.5);
+          top: 16px;
+
+        }
+
+
+      }
+    }
+
+    &.active {
+      &:before {
+        content: url(../img/top/info-ttl-bg.png);
+        position: absolute;
+        top: 20px;
+        left: -107px;
+        z-index: -2;
+        transform: scale(0.7);
+
+        @include sp {
+          transform: scale(0.5);
+          top: 16px;
+
+        }
+      }
+    }
+  }
+
+  &__box {
+   margin: 0 0 40px;
+  }
+
+  &__article {
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+    padding: 16px 2px;
+    border-bottom: #b3b3b3 solid 1px;
+    position: relative;
+
+    &:first-of-type {
+      border-top: #b3b3b3 solid 1px;
+    }
+
+    @include tab {
+      display: block;
+      padding: 6px 2px;
+
+    }
+
+    &:before {
+      content: url(../img/top/top-info-ttl-img.png);
+      transform: scale(0.8);
+      position: absolute;
+      top: 10px;
+      right: 5px;
+
+      @include tab {
+        top: 50%;
+        transform: translateY(-50%);
+
+      }
+    }
+
+  }
+
+  &__date {
+    margin: 0 16px 0 0;
+    font-size: 14px;
+
+  }
+
+  &__cat {
+    width: 80px;
+    text-align: center;
+    background-color: #8eb12b;
+    font-size: 14px;
+    color: #fff;
+    line-height: 1.2;
+    margin: 0 24px 0 0;
+    display: inline-block;
+    padding: 1px;
+
+    &--blog {
+      background-color: #f7931e;
+
+    }
+  }
+
+  &__pager {
+    text-align: center;
+  }
+
+  &__ {}
+
+  &__ {}
+
   &__ {}
 
   &__ {}
 
   &__ {}
 
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+
+}
+
+
+/* =================================
+お知らせ詳細
+ ================================= */
+
+ .single {
+
+  &__section {
+    margin: 60px auto 40px;
+
+    @include tab {
+      margin: 20px auto 40px;
+    }
+  }
+
+  &__ttl {
+    max-width: 560px;
+    font-size: 20px;
+    padding: 0 4px;
+    margin: 0 0 40px;
+    position: relative;
+    @include tab{
+      font-size: 16px;
+
+    }
+
+&:before {
+  content: '';
+  bottom: -30px;
+  left: 0;
+  width: 100%;/*指定したい幅*/
+  padding-top: 5%;/*画像の幅に対する高さ比率*/
+  display: block;
+}
+
+&:after {
+  position: absolute;
+  content: '';
+  bottom: -30px;
+  left:0;
+  display: block;
+  width: 100%;/*幅*/
+  height: 20px;/*どれだけデカくなってもはみ出ないであろう高さを指定*/
+  background-image: url(../img/subpage/single-ttl.png);
+  background-size: contain;
+  background-repeat: no-repeat;/*画像を繰り返さない*/
+}
+  }
+
+  &__date {
+    font-size: 12px;
+    display: block;
+    margin: 0 0 12px 4px;
+  }
+
+  &__content {
+    margin: 40px 20px;
+
+    @include tab{
+      margin: 40px 8px;
+
+    }
+  }
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
 
 }
