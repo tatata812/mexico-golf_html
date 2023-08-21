@@ -485,8 +485,7 @@ footer
 
   &__inner {
     background-color: #007f21;
-    padding: 40px 8px 12px;
-
+    padding: 24px 8px 12px;
   }
 
 
@@ -504,12 +503,12 @@ footer
   &__tel {
     display: block;
     max-width: 300px;
-    margin: 0 auto 32px;
+    margin: 0 auto 40px;
     padding: 0 12px;
 
 
     @include pc {
-      margin: 0 auto 16px;
+      margin: 0 auto 32px;
     }
   }
 
@@ -535,10 +534,10 @@ footer
   &__nev {
     display: flex;
     justify-content: center;
-    margin: 0 0 32px;
+    margin: 0 0 24px;
 
     @include pc {
-      margin: 12px 0 32px;
+      margin: 12px 0 24px;
     }
 
     @include tab {

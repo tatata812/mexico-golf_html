@@ -1358,7 +1358,7 @@ footer
 }
 .footer__inner {
   background-color: #007f21;
-  padding: 40px 8px 12px;
+  padding: 24px 8px 12px;
 }
 .footer__ttl {
   display: block;
@@ -1369,12 +1369,12 @@ footer
 .footer__tel {
   display: block;
   max-width: 300px;
-  margin: 0 auto 32px;
+  margin: 0 auto 40px;
   padding: 0 12px;
 }
 @media (max-width: 1200px) {
   .footer__tel {
-    margin: 0 auto 16px;
+    margin: 0 auto 32px;
   }
 }
 .footer__blog {
@@ -1396,11 +1396,11 @@ footer
 .footer__nev {
   display: flex;
   justify-content: center;
-  margin: 0 0 32px;
+  margin: 0 0 24px;
 }
 @media (max-width: 1200px) {
   .footer__nev {
-    margin: 12px 0 32px;
+    margin: 12px 0 24px;
   }
 }
 @media (max-width: 820px) {
