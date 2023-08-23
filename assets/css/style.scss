@@ -76,8 +76,6 @@ header
   background-color: #fff;
   position: fixed;
 
-
-
   @include tab {
     border-bottom: 1px #8a8a8a solid;
 
@@ -96,7 +94,6 @@ header
     @include tab {
       left: 12px;
       transform: translateX(0);
-
     }
   }
 
@@ -139,7 +136,6 @@ header
 
     @include tab {
       max-width: 200px;
-
     }
   }
 
@@ -156,14 +152,12 @@ header
     @include pc {
       position: initial;
       transform: translate(0, 0);
-
     }
 
 
     @include tab {
       display: none;
     }
-
   }
 
   &__nav-item {
@@ -202,16 +196,12 @@ header
     @media screen and (max-width: 1550px) {
       width: 220px;
       padding: 0 12px;
-
     }
 
 
     @media screen and (max-width: 1250px) {
       width: 180px;
     }
-
-
-
   }
 
   &__nav-mail {
@@ -286,7 +276,6 @@ header
       &:nth-of-type(3) {
         top: 33px;
       }
-
     }
 
     /*.active が付与された時の挙動*/
@@ -315,7 +304,6 @@ header
 }
 
 
-
 .header-sp {
   position: fixed;
   z-index: 99;
@@ -336,7 +324,6 @@ header
     left: 50%;
     transform: translate(-50%, -50%);
   }
-
 
   &__time {
     text-align: center;
@@ -363,8 +350,6 @@ header
   &__nav-sublist {
     margin: 0 0 0 20px;
   }
-
-
 }
 
 
@@ -386,7 +371,6 @@ header
     border: #000 1px solid;
     padding: 0 2px;
     line-height: 1.5;
-
   }
 
   &__ttl {
@@ -417,7 +401,6 @@ header
     padding: 0 4px;
     font-size: 11px;
     line-height: 1.5;
-
   }
 
   &__btn02 {
@@ -429,13 +412,10 @@ header
     padding: 0 4px;
     font-size: 11px;
     line-height: 1.5;
-
-
   }
 
   &__btn-wrap {
     display: inline-block;
-
   }
 
   &__bottom {
@@ -449,28 +429,7 @@ header
     font-size: 14px;
     color: #6a6a6a;
   }
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-
 }
-
-
-
 
 /* =================================
 footer
@@ -488,16 +447,11 @@ footer
     padding: 24px 8px 12px;
   }
 
-
-
-
   &__ttl {
     display: block;
     max-width: 340px;
     margin: 0 auto 4px;
     padding: 0 12px;
-
-
   }
 
   &__tel {
@@ -511,24 +465,6 @@ footer
       margin: 0 auto 32px;
     }
   }
-
-  &__blog {
-    position: absolute;
-    top: 168px;
-    left: 75%;
-    transform: translateX(-50%);
-
-    @include pc {
-      position: static;
-      transform: translateX(0);
-      display: block;
-      max-width: 280px;
-      margin: 0 auto 32px;
-      padding: 0 12px;
-
-    }
-  }
-
 
 
   &__nev {
@@ -587,10 +523,6 @@ footer
     font-size: 12px;
   }
 
-
-
-
-
   // スクロールボタン
   &__scroll-btn {
     cursor: pointer;
@@ -598,7 +530,6 @@ footer
     top: -32px;
     right: 5%;
     width: 50px;
-
   }
 }
 
@@ -618,9 +549,6 @@ main-visual
   @include pc {
     background-image: none;
   }
-
-
-
 
   &__list {
     max-width: 1120px;
@@ -661,23 +589,12 @@ main-visual
     }
   }
 
-
   .slick-dots {
     bottom: -24px;
-
   }
 
   .slick-slider {
     margin-bottom: 0;
-  }
-
-  .slick-prev {
-    left: -16px;
-    z-index: 2;
-  }
-
-  .slick-next {
-    right: -3px;
   }
 
 }
@@ -692,7 +609,6 @@ top-about
 
   @include tab {
     padding: 0 0 40px;
-
   }
 
   &__ttl {
@@ -705,7 +621,6 @@ top-about
     @include sp {
       background-image: none;
       margin: 16px 0 40px;
-
     }
   }
 
@@ -714,8 +629,6 @@ top-about
     max-width: 800px;
     margin: 0 auto;
   }
-
-
 
   &__content {
     display: flex;
@@ -728,7 +641,6 @@ top-about
       align-items: center;
       padding: 0 12px;
       margin: 0 auto 40px;
-
     }
   }
 
@@ -740,8 +652,6 @@ top-about
     }
   }
 
-  &__img {}
-
   &__subttl {
     margin: 0 0 12px;
   }
@@ -751,9 +661,7 @@ top-about
     max-width: 320px;
     margin: 0 auto;
   }
-
 }
-
 
 
 .top-about-subttl {
@@ -770,8 +678,6 @@ top-about
       top: -7px;
       right: 0;
     }
-
-
   }
 
   &__ttl-span {
@@ -779,16 +685,7 @@ top-about
     font-size: 16px;
     font-weight: 900;
   }
-
-
 }
-
-
-
-
-
-
-
 
 
 /* =================================
@@ -809,7 +706,6 @@ top-info
   &__tabwrap {
     max-width: 920px;
     margin: 0 auto;
-
   }
 
   &__tab {
@@ -821,7 +717,6 @@ top-info
     @include sp {
       gap: 40px;
       margin: 0 0 2px;
-
     }
   }
 
@@ -833,9 +728,7 @@ top-info
 
     @include sp {
       width: 52px;
-
     }
-
 
     &:hover {
       &:before {
@@ -849,10 +742,7 @@ top-info
         @include sp {
           transform: scale(0.5);
           top: 13px;
-
         }
-
-
       }
     }
 
@@ -868,7 +758,6 @@ top-info
         @include sp {
           transform: scale(0.5);
           top: 13px;
-
         }
       }
     }
@@ -881,8 +770,6 @@ top-info
     border: #8cc63f 3px solid;
     border-radius: 8px;
     padding: 64px 24px 40px 24px;
-
-
   }
 
   &__box-item {
@@ -924,13 +811,11 @@ top-info
 
       }
     }
-
   }
 
   &__date {
     margin: 0 16px 0 0;
     font-size: 14px;
-
   }
 
   &__cat {
@@ -946,28 +831,14 @@ top-info
 
     &--blog {
       background-color: #f7931e;
-
     }
-
   }
-
-  &__article-ttl {}
-
-
 
   &__btn {
     display: block;
     width: 220px;
     margin: 40px auto 0;
-
   }
-
-  &__ {}
-
-  &__ {}
-
-
-
 }
 
 
@@ -987,7 +858,6 @@ top-shop
     border-bottom: #ffdb31 28px solid;
   }
 
-
   &__ttl-img {
     padding: 0 4px;
     max-width: 800px;
@@ -1000,7 +870,6 @@ top-shop
 
     @include sp {
       padding: 16px 12px;
-
     }
   }
 
@@ -1019,7 +888,6 @@ top-shop
     @include tab {
       background-image: none;
     }
-
   }
 
   &__box {
@@ -1041,7 +909,6 @@ top-shop
     @include tab {
       width: 100%;
       max-width: 400px;
-
     }
   }
 
@@ -1054,20 +921,9 @@ top-shop
 
     @include tab {
       padding: 0 12px 0 12px;
-
     }
   }
-
-  &__ {}
-
-  &__ {}
-
-
-
 }
-
-
-
 
 
 /* =================================
@@ -1082,8 +938,6 @@ top-partner
     border-bottom: #ffdb31 28px solid;
 
   }
-
-
 
   &__ttl-img {
     padding: 0 4px;
@@ -1101,7 +955,6 @@ top-partner
     @include pc {
       margin: 0 0 12px;
     }
-
 
     &:before {
       content: "";
@@ -1132,7 +985,6 @@ top-partner
     @include pc {
       margin: 0 0 0 0;
       padding: 40px 12px;
-
     }
   }
 
@@ -1151,34 +1003,6 @@ top-partner
 
     }
   }
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-
 }
 
 
@@ -1208,11 +1032,8 @@ top-price
 
     @include sp {
       margin: 24px auto;
-
     }
   }
-
-  &_center-img {}
 
   &__content {
     background-color: #fefff0;
@@ -1256,9 +1077,7 @@ top-price
 
     @include sp {
       font-size: 16px;
-
     }
-
   }
 
   &__th {
@@ -1271,7 +1090,6 @@ top-price
 
     @include sp {
       letter-spacing: 0.1rem;
-
     }
   }
 
@@ -1282,8 +1100,6 @@ top-price
     font-weight: 900;
     text-align: center;
     vertical-align: middle;
-
-
   }
 
   &__table-span {
@@ -1304,9 +1120,7 @@ top-price
 
     @include sp {
       width: 55px;
-
     }
-
 
     &--weekday {
       background-color: #0071bc;
@@ -1317,7 +1131,6 @@ top-price
     }
   }
 
-
   &__bg {
     background-color: #f8f8f8;
   }
@@ -1327,23 +1140,6 @@ top-price
     max-width: 320px;
     margin: 40px auto;
   }
-
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-
 }
 
 /* =================================
@@ -1365,7 +1161,6 @@ top-access
 
     @include sp {
       margin: 24px auto;
-
     }
   }
 
@@ -1409,37 +1204,9 @@ top-access
     padding: 6px 12px;
     max-width: 300px;
     margin: 0 0 12px;
-
   }
 
   &__content-text {
     margin: 0 0 32px;
   }
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
 }

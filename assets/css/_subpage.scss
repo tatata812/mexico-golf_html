@@ -38,7 +38,6 @@
 
       @include pc {
         display: none;
-
       }
     }
 
@@ -51,7 +50,6 @@
 
       @include pc {
         display: none;
-
       }
     }
   }
@@ -60,9 +58,6 @@
     max-width: 1080px;
     margin: 0 auto;
     padding: 0 12px;
-
-
-
   }
 
   &__ttl {
@@ -74,9 +69,8 @@
     max-width: 220px;
     margin: 0 0 16px;
 
-    @include sp{
+    @include sp {
       max-width: 180px;
-
     }
   }
 
@@ -85,7 +79,6 @@
 
     @include sp {
       margin: 0 0 40px 8px;
-
     }
   }
 
@@ -97,7 +90,7 @@
       max-width: 480px;
     }
 
-    @include sp{
+    @include sp {
       max-width: 300px;
 
       &--l {
@@ -106,32 +99,6 @@
 
     }
   }
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-
 }
 
 
@@ -152,7 +119,6 @@
       flex-direction: column;
       margin: 0 auto;
       gap: 12px;
-
     }
   }
 
@@ -164,7 +130,6 @@
     @include tab {
       width: 100%;
     }
-
   }
 
   &__left-img {
@@ -175,7 +140,6 @@
 
       @include tab {
         border-right: none;
-
       }
     }
 
@@ -220,11 +184,8 @@
 
       span {
         background: #29abe2;
-
       }
-
     }
-
   }
 
   &__right-img {
@@ -232,7 +193,6 @@
 
     @include sp {
       width: 120px;
-
     }
   }
 
@@ -252,8 +212,6 @@
       width: 30px;
       height: 30px;
       line-height: 30px;
-
-
     }
   }
 }
@@ -275,24 +233,21 @@
     position: relative;
     z-index: 1;
 
-    @include tab{
+    @include tab {
       width: 180px;
       font-size: 16px;
       margin: 0 0 -25px;
       border: dotted 3px #d9e021;
     }
-
   }
 
   &__box {
     border: dotted 5px #d9e021;
     padding: 12px;
 
-    @include tab{
+    @include tab {
       border: dotted 3px #d9e021;
       padding: 4px;
-
-
     }
   }
 
@@ -300,7 +255,7 @@
     background-color: #feffd6;
     padding: 24px;
 
-    @include tab{
+    @include tab {
       padding: 28px 6px 6px;
 
     }
@@ -312,37 +267,19 @@
     gap: 25px;
     justify-content: center;
 
-    @include tab{
+    @include tab {
       gap: 16px;
     }
   }
 
   &__item {
-    width: calc( ( 100% - 50px ) / 3 );
+    width: calc((100% - 50px) / 3);
 
-    @include tab{
-      width: calc( ( 100% - 16px ) / 2 );
+    @include tab {
+      width: calc((100% - 16px) / 2);
 
     }
   }
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-
 }
 
 /* =================================
@@ -356,7 +293,6 @@
 
     @include tab {
       margin: 20px auto 40px;
-
     }
   }
 
@@ -421,34 +357,6 @@
       padding: 4px;
     }
   }
-
-
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-
 }
 
 /* =================================
@@ -470,7 +378,7 @@
     text-align: right;
     font-size: 12px;
 
-    @include sp{
+    @include sp {
       text-align: left;
       font-size: 10px;
     }
@@ -480,7 +388,7 @@
     margin: 0 0 60px;
     max-width: 860px;
 
-    @include tab{
+    @include tab {
       margin: 0 0 40px;
 
     }
@@ -512,9 +420,7 @@
 
     @include sp {
       font-size: 16px;
-
     }
-
   }
 
   &__th {
@@ -538,8 +444,6 @@
     font-weight: 900;
     text-align: center;
     vertical-align: middle;
-
-
   }
 
   &__table-span {
@@ -560,7 +464,6 @@
 
     @include sp {
       width: 55px;
-
     }
 
 
@@ -595,35 +498,13 @@
 
   &__field-section {
     margin: 0 0 80px;
-    @include tab{
+
+    @include tab {
       margin: 0 0 40px;
 
     }
   }
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-
 }
-
-
-
 
 
 /* =================================
@@ -663,36 +544,6 @@
   &__text {
     margin: 0 0 40px;
   }
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-
 }
 
 /* =================================
@@ -712,7 +563,7 @@
   &__text {
     margin: 0 0 60px;
 
-    @include tab{
+    @include tab {
       margin: 0 0 40px;
 
     }
@@ -789,7 +640,6 @@
     @include sp {
       font-size: 14px;
       top: 16px;
-
     }
   }
 
@@ -801,7 +651,6 @@
     color: #000;
     margin: 0 0 12px;
     border-radius: 5px;
-
 
     @include tab {
       width: 100%;
@@ -821,7 +670,6 @@
     color: #000;
     margin: 0 0 12px;
     border-radius: 5px;
-
 
     @include tab {
       width: 100%;
@@ -867,41 +715,26 @@
       border: #f02424 2px solid;
       padding: 16px;
 
-      @include sp{
+      @include sp {
         margin: 0 auto 20px;
       }
 
       li {
         margin: 0 0 4px;
 
-        @include sp{
+        @include sp {
           font-size: 13px;
         }
       }
     }
-
   }
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
 }
 
 /* =================================
 ショップ
  ================================= */
 
-.aaa {
+.page-shop {
 
   &__section {
     margin: 40px auto 80px;
@@ -911,7 +744,6 @@
 
     }
   }
-  &__ {}
 
   &__ {}
 
@@ -937,6 +769,9 @@
 
   &__ {}
 
+  &__ {}
+
+  &__ {}
 }
 
 
@@ -944,7 +779,7 @@
 買い取りについて
  ================================= */
 
- .aaa {
+.page-buying {
 
   &__section {
     margin: 40px auto 80px;
@@ -954,7 +789,6 @@
 
     }
   }
-  &__ {}
 
   &__ {}
 
@@ -982,23 +816,22 @@
 
   &__ {}
 
+  &__ {}
 }
 
 /* =================================
 お知らせ一覧
  ================================= */
 
- .page-information {
+.page-information {
 
   &__section {
     margin: 40px auto 80px;
 
     @include tab {
       margin: 20px auto 40px;
-
     }
   }
-
 
   &__tab {
     display: flex;
@@ -1008,12 +841,9 @@
     border-bottom: #8cc63f 3px solid;
     padding: 0 0 5px;
 
-
-
     @include sp {
       gap: 40px;
       margin: 0 0 40px;
-
     }
   }
 
@@ -1025,9 +855,7 @@
 
     @include sp {
       width: 52px;
-
     }
-
 
     &:hover {
       &:before {
@@ -1043,8 +871,6 @@
           top: 16px;
 
         }
-
-
       }
     }
 
@@ -1067,7 +893,7 @@
   }
 
   &__box {
-   margin: 0 0 40px;
+    margin: 0 0 40px;
   }
 
   &__article {
@@ -1101,13 +927,11 @@
 
       }
     }
-
   }
 
   &__date {
     margin: 0 16px 0 0;
     font-size: 14px;
-
   }
 
   &__cat {
@@ -1123,37 +947,12 @@
 
     &--blog {
       background-color: #f7931e;
-
     }
   }
 
   &__pager {
     text-align: center;
   }
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-
 }
 
 
@@ -1161,7 +960,7 @@
 お知らせ詳細
  ================================= */
 
- .single {
+.single {
 
   &__section {
     margin: 60px auto 40px;
@@ -1177,32 +976,38 @@
     padding: 0 4px;
     margin: 0 0 40px;
     position: relative;
-    @include tab{
+
+    @include tab {
       font-size: 16px;
 
     }
 
-&:before {
-  content: '';
-  bottom: -30px;
-  left: 0;
-  width: 100%;/*指定したい幅*/
-  padding-top: 5%;/*画像の幅に対する高さ比率*/
-  display: block;
-}
+    &:before {
+      content: '';
+      bottom: -30px;
+      left: 0;
+      width: 100%;
+      /*指定したい幅*/
+      padding-top: 5%;
+      /*画像の幅に対する高さ比率*/
+      display: block;
+    }
 
-&:after {
-  position: absolute;
-  content: '';
-  bottom: -30px;
-  left:0;
-  display: block;
-  width: 100%;/*幅*/
-  height: 20px;/*どれだけデカくなってもはみ出ないであろう高さを指定*/
-  background-image: url(../img/subpage/single-ttl.png);
-  background-size: contain;
-  background-repeat: no-repeat;/*画像を繰り返さない*/
-}
+    &:after {
+      position: absolute;
+      content: '';
+      bottom: -30px;
+      left: 0;
+      display: block;
+      width: 100%;
+      /*幅*/
+      height: 20px;
+      /*どれだけデカくなってもはみ出ないであろう高さを指定*/
+      background-image: url(../img/subpage/single-ttl.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      /*画像を繰り返さない*/
+    }
   }
 
   &__date {
@@ -1214,30 +1019,29 @@
   &__content {
     margin: 40px 0;
 
-    @include tab{
+    @include tab {
       margin: 40px 8px;
 
     }
   }
+}
 
-  &__ {}
+/* =================================
+お知らせ詳細
+ ================================= */
 
-  &__ {}
+.page-404 {
 
-  &__ {}
+  &__section {
+    margin: 60px auto 40px;
 
-  &__ {}
+    @include tab {
+      margin: 20px auto 40px;
+    }
+  }
 
-  &__ {}
 
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
+  &__content {
+    min-height: 300px;
+  }
 }

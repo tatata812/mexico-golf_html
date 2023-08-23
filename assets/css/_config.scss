@@ -79,17 +79,13 @@ li {
   }
 }
 
-
-
 .main {
   padding: 100px 0 0;
-
 
   @include tab {
     padding: 60px 0 0 0;
   }
 }
-
 
 
 //フェードイン　アニメーション
@@ -103,36 +99,6 @@ li {
     transform: scale(1);
     opacity: 1;
   }
-}
-
-
-// Slick設定
-
-.slick-prev:before {
-  background: url(../img/top/main-visual-arrow_l.png) !important;
-  background-size: contain !important;
-  background-repeat: no-repeat !important;
-  font-size: 36px;
-  opacity: 1 !important;
-
-}
-
-.slick-next:before {
-  background: url(../img/top/main-visual-arrow_r.png) !important;
-  background-size: contain !important;
-  background-repeat: no-repeat !important;
-  font-size: 36px;
-  opacity: 1 !important;
-
-}
-
-.slick-dots li.slick-active button:before {
-  opacity: 1 !important;
-}
-
-
-.slick-prev:before, .slick-next:before {
-  color: transparent;
 }
 
 // エディター設定
@@ -200,15 +166,12 @@ li {
   
 
     li {
-     
       list-style: decimal;
     }
   }
 
   ul {
     margin: 0 0 12px 24px;
-   
-
     li {
       
       list-style: disc;
