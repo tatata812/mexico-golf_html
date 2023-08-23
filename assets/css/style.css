@@ -974,7 +974,7 @@ li {
   margin: 0 0 12px 4px;
 }
 .single__content {
-  margin: 40px 20px;
+  margin: 40px 0;
 }
 @media (max-width: 820px) {
   .single__content {
