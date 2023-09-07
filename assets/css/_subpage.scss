@@ -72,6 +72,15 @@
     @include sp {
       max-width: 180px;
     }
+
+    &--shop01 {
+      max-width: 460px;
+    }
+
+    &--shop02 {
+      max-width: 500px;
+    }
+
   }
 
   &__lead-text {
@@ -745,17 +754,61 @@
     }
   }
 
-  &__ {}
+  &__text {
+    margin: 0 0 40px 40px;
 
-  &__ {}
+    @include sp {
+      margin: 0 0 40px 8px;
+    }
+  }
 
-  &__ {}
+  &__img {
+    margin: 0 0 60px;
+  }
 
-  &__ {}
+  &__box {
+    margin: 32px 0 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
 
-  &__ {}
+    @include sp {
+      gap: 6px;
+    }
+  }
 
-  &__ {}
+  &__item {
+    border: #009245 solid 2px;
+
+  }
+
+  &__item-top {
+    padding: 8px 12px;
+    font-size: 14px;
+
+    @include sp {
+      padding: 6px 2px;
+
+    }
+  }
+
+  &__item-botom {
+    padding: 4px 12px;
+    font-size: 17px;
+    background-color: #8cc63f;
+    color: #fff;
+
+    @include sp {
+      padding: 2px 2px;
+      font-size: 16px;
+    }
+
+
+    span {
+      font-size: 14px;
+
+    }
+  }
 
   &__ {}
 
@@ -782,41 +835,63 @@
 .page-buying {
 
   &__section {
-    margin: 40px auto 80px;
+    margin: 40px auto 20px;
 
     @include tab {
-      margin: 20px auto 40px;
+      margin: 20px auto 20px;
 
     }
   }
 
-  &__ {}
+  &__text {
+    margin: 0 0 24px 40px;
 
-  &__ {}
+    @include sp {
+      margin: 0 0 24px 8px;
+    }
 
-  &__ {}
+    &--bottom {
+      margin: 0 0 40px 40px;
 
-  &__ {}
+      @include sp {
+        margin: 0 0 40px 8px;
+      }
+    }
+  }
 
-  &__ {}
+  &__img01 {
+    margin: 0 0 60px;
+  }
 
-  &__ {}
+  &__img02 {
+    max-width: 340px;
+    margin: 0 0 0 40px;
 
-  &__ {}
+    @include sp {
+      margin: 0;
+    }
+  }
 
-  &__ {}
+  &__box {
+    position: relative;
+    inset-inline: 50%;
+    width: 100vw;
+    margin-inline: -50vw;
+    background-color: #fefff0;
+    padding: 60px 0;
+    z-index: -2;
 
-  &__ {}
+    @include sp {
+      padding: 20px 0;
 
-  &__ {}
+    }
+  }
 
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
+  &__box-inner {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 12px;
+  }
 }
 
 /* =================================

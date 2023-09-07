@@ -188,6 +188,12 @@ li {
     max-width: 180px;
   }
 }
+.main__subttl--shop01 {
+  max-width: 460px;
+}
+.main__subttl--shop02 {
+  max-width: 500px;
+}
 .main__lead-text {
   margin: 0 0 40px 40px;
 }
@@ -778,17 +784,114 @@ li {
     margin: 20px auto 40px;
   }
 }
+.page-shop__text {
+  margin: 0 0 40px 40px;
+}
+@media (max-width: 600px) {
+  .page-shop__text {
+    margin: 0 0 40px 8px;
+  }
+}
+.page-shop__img {
+  margin: 0 0 60px;
+}
+.page-shop__box {
+  margin: 32px 0 0;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+@media (max-width: 600px) {
+  .page-shop__box {
+    gap: 6px;
+  }
+}
+.page-shop__item {
+  border: #009245 solid 2px;
+}
+.page-shop__item-top {
+  padding: 8px 12px;
+  font-size: 14px;
+}
+@media (max-width: 600px) {
+  .page-shop__item-top {
+    padding: 6px 2px;
+  }
+}
+.page-shop__item-botom {
+  padding: 4px 12px;
+  font-size: 17px;
+  background-color: #8cc63f;
+  color: #fff;
+}
+@media (max-width: 600px) {
+  .page-shop__item-botom {
+    padding: 2px 2px;
+    font-size: 16px;
+  }
+}
+.page-shop__item-botom span {
+  font-size: 14px;
+}
 /* =================================
 買い取りについて
  ================================= */
 .page-buying__section {
-  margin: 40px auto 80px;
+  margin: 40px auto 20px;
 }
 @media (max-width: 820px) {
   .page-buying__section {
-    margin: 20px auto 40px;
+    margin: 20px auto 20px;
   }
 }
+.page-buying__text {
+  margin: 0 0 24px 40px;
+}
+@media (max-width: 600px) {
+  .page-buying__text {
+    margin: 0 0 24px 8px;
+  }
+}
+.page-buying__text--bottom {
+  margin: 0 0 40px 40px;
+}
+@media (max-width: 600px) {
+  .page-buying__text--bottom {
+    margin: 0 0 40px 8px;
+  }
+}
+.page-buying__img01 {
+  margin: 0 0 60px;
+}
+.page-buying__img02 {
+  max-width: 340px;
+  margin: 0 0 0 40px;
+}
+@media (max-width: 600px) {
+  .page-buying__img02 {
+    margin: 0;
+  }
+}
+.page-buying__box {
+  position: relative;
+  inset-inline: 50%;
+  width: 100vw;
+  margin-inline: -50vw;
+  background-color: #fefff0;
+  padding: 60px 0;
+  z-index: -2;
+}
+@media (max-width: 600px) {
+  .page-buying__box {
+    padding: 20px 0;
+  }
+}
+.page-buying__box-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
 /* =================================
 お知らせ一覧
  ================================= */
